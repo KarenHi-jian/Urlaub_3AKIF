@@ -1,0 +1,39 @@
+Berlin - 999 EUR - AllInclusive: true
+
+Berlin_-_999_EUR_-_AllInclusive:_true
+
+Berlin
+_-_
+999
+_EUR_-_AllInclusive:_
+true
+
+Berlin
+"_-_"
+999
+"_EUR_-_AllInclusive:_"
+true
+
+ort
+"_-_"
+preis
+"_EUR_-_AllInclusive:_"
+allInclusive
+
+ort + "_-_" + preis + "_EUR_-_AllInclusive:_" + allInclusive
+
+ort + " - " + preis + " EUR - AllInclusive: " + allInclusive
+
+System.out.println(ort + " - " + preis + " EUR - AllInclusive: " + allInclusive);
+
+
+
+
+
+
+
+
+
+
+
+
