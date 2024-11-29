@@ -13,7 +13,7 @@ public class TestMinPreis
         ReiseBuro r;
         
         r= new ReiseBuro();
-        assertEquals (r.gunstigsterUrlaub(),999999);
+        assertEquals (r.gunstigsterUrlaub(),null);
     }
     
     @Test
@@ -25,7 +25,7 @@ public class TestMinPreis
         r = new ReiseBuro();
         u0 = new Urlaub("Rom",999,false);
         r.hinzufugen(u0);
-        assertEquals (r.gunstigsterUrlaub(),999);
+        assertEquals (r.gunstigsterUrlaub(),u0);
     }
     
     @Test 
@@ -39,7 +39,7 @@ public class TestMinPreis
         a = new Urlaub("Paris",1100,true);
         r.hinzufugen(u0);
         r.hinzufugen(a);
-        assertEquals (r.gunstigsterUrlaub(),999);
+        assertEquals (r.gunstigsterUrlaub(),u0);
     }
     
     @Test
@@ -55,7 +55,7 @@ public class TestMinPreis
         r.hinzufugen(u0);
         r.hinzufugen(a);
         r.hinzufugen(d);
-        assertEquals (r.gunstigsterUrlaub(),555);
+        assertEquals (r.gunstigsterUrlaub(),u0);
     }
     
     @Test
@@ -71,7 +71,7 @@ public class TestMinPreis
         r.hinzufugen(u0);
         r.hinzufugen(a);
         r.hinzufugen(d);
-        assertEquals (r.gunstigsterUrlaub(),555);
+        assertEquals (r.gunstigsterUrlaub(),u0);
     }
     
     @Test
@@ -87,7 +87,7 @@ public class TestMinPreis
         r.hinzufugen(u0);
         r.hinzufugen(a);
         r.hinzufugen(d);
-        assertEquals (r.gunstigsterUrlaub(),666 );
+        assertEquals (r.gunstigsterUrlaub(),a);
     }
     
     @Test
@@ -103,7 +103,7 @@ public class TestMinPreis
         r.hinzufugen(u0);
         r.hinzufugen(a);
         r.hinzufugen(d);
-        assertEquals ( r.gunstigsterUrlaub(),777);
+        assertEquals ( r.gunstigsterUrlaub(),d);
     }
     
     @Test
@@ -119,7 +119,7 @@ public class TestMinPreis
         r.hinzufugen(u0);
         r.hinzufugen(a);
         r.hinzufugen(d);
-        assertEquals ( r.gunstigsterUrlaub(),500);
+        assertEquals ( r.gunstigsterUrlaub(),d);
     }
 }
 

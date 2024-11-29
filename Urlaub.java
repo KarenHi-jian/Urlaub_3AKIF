@@ -90,6 +90,10 @@ public class Urlaub
     {
         this.allInclusive = allInclusive;
     }
+    public void  hinzufugen(ReiseBuro wo)
+    {
+        wo.hinzufugen(this);
+    }
     
     /*
      * New York - 2310 EUR - all Inclusive
